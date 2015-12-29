@@ -12,6 +12,8 @@
 		0DA945271C30D7E600472EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA945251C30D7E600472EF6 /* Main.storyboard */; };
 		0DA945291C30D7E600472EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA945281C30D7E600472EF6 /* Assets.xcassets */; };
 		0DA9452C1C30D7E600472EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA9452A1C30D7E600472EF6 /* LaunchScreen.storyboard */; };
+		0DA945341C30E0F200472EF6 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DA945331C30E0F200472EF6 /* Minecraft.ttf */; };
+		0DA945361C31939300472EF6 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0DA945351C31939300472EF6 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0DA945281C30D7E600472EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DA9452B1C30D7E600472EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DA9452D1C30D7E600472EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DA945331C30E0F200472EF6 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		0DA945351C31939300472EF6 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		0DA945201C30D7E600472EF6 /* RetroCalc */ = {
 			isa = PBXGroup;
 			children = (
+				0DA945351C31939300472EF6 /* btn.wav */,
+				0DA945331C30E0F200472EF6 /* Minecraft.ttf */,
 				0DA945211C30D7E600472EF6 /* AppDelegate.swift */,
 				0DA945231C30D7E600472EF6 /* ViewController.swift */,
 				0DA945251C30D7E600472EF6 /* Main.storyboard */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					0DA9451D1C30D7E600472EF6 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = VYYPS82H22;
 					};
 				};
 			};
@@ -122,8 +129,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA945361C31939300472EF6 /* btn.wav in Resources */,
 				0DA9452C1C30D7E600472EF6 /* LaunchScreen.storyboard in Resources */,
 				0DA945291C30D7E600472EF6 /* Assets.xcassets in Resources */,
+				0DA945341C30E0F200472EF6 /* Minecraft.ttf in Resources */,
 				0DA945271C30D7E600472EF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,10 +256,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RetroCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawjohns24.RetroCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RetroCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lawjohns24.RetroCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
