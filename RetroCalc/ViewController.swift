@@ -120,13 +120,14 @@ class ViewController: UIViewController {
             }
             
             currentOperation = op
-            
         }
         else {
             playSound()
-            leftVal = runningNumber
-            runningNumber = ""
-            currentOperation = op
+            if runningNumber != "" {
+                leftVal = runningNumber
+                runningNumber = ""
+                currentOperation = op
+            }
         }
     }
 }
